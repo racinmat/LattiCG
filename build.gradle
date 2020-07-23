@@ -7,8 +7,13 @@ sourceSets.test.java.srcDirs = ['test']
 
 repositories {
     mavenCentral()
+
+    maven {
+        url "https://jitpack.io"
+    }
 }
 
 dependencies {
     testCompile "junit:junit:4.12"
+    implementation 'com.github.KaptainWutax:SeedUtils:d60703c3d4dee0ea9cb3a3c2d476c8334f04979d'
 }

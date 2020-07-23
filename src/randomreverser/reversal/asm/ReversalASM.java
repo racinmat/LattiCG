@@ -1,5 +1,6 @@
 package randomreverser.reversal.asm;
 
+import kaptainwutax.seedutils.lcg.LCG;
 import randomreverser.reversal.Program;
 import randomreverser.reversal.calltype.CallType;
 import randomreverser.reversal.calltype.CallTypes;
@@ -7,7 +8,6 @@ import randomreverser.reversal.constraint.Constraint;
 import randomreverser.reversal.constraint.ConstraintType;
 import randomreverser.reversal.instruction.Instruction;
 import randomreverser.reversal.instruction.Instructions;
-import randomreverser.util.LCG;
 import randomreverser.util.Pair;
 
 import java.math.BigInteger;

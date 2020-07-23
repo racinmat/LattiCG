@@ -1,9 +1,9 @@
 package randomreverser.reversal;
 
+import kaptainwutax.seedutils.lcg.LCG;
 import randomreverser.reversal.calltype.CallType;
 import randomreverser.reversal.constraint.Constraint;
 import randomreverser.reversal.instruction.Instruction;
-import randomreverser.util.LCG;
 
 import java.util.HashMap;
 import java.util.List;

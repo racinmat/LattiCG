@@ -1,10 +1,10 @@
 package randomreverser.reversal.asm;
 
+import kaptainwutax.seedutils.lcg.LCG;
 import randomreverser.reversal.Program;
 import randomreverser.reversal.calltype.CallType;
 import randomreverser.reversal.constraint.Constraint;
 import randomreverser.reversal.instruction.Instruction;
-import randomreverser.util.LCG;
 
 import java.util.List;
 

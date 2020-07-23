@@ -1,13 +1,14 @@
 package randomreverser;
 
+import kaptainwutax.seedutils.lcg.LCG;
+import kaptainwutax.seedutils.lcg.rand.JRand;
+import kaptainwutax.seedutils.lcg.rand.Rand;
 import randomreverser.math.component.*;
 import randomreverser.math.lattice.LLL.Params;
 import randomreverser.math.lattice.LLL.Result;
-import randomreverser.util.LCG;
 import randomreverser.util.Mth;
 import randomreverser.math.lattice.LLL.LLL;
 import randomreverser.math.lattice.enumeration.Enumerate;
-import randomreverser.util.Rand;
 
 import java.math.BigInteger;
 import java.util.ArrayList;
@@ -47,7 +48,7 @@ public class RandomReverser {
         BigVector lower = new BigVector(dimensions);
         BigVector upper = new BigVector(dimensions);
         BigVector offset = new BigVector(dimensions);
-        Rand rand = Rand.ofInternalSeed(0L);
+        Rand rand = new JRand(0L, false);
 
         for (int i = 0; i < dimensions; i++) {
             lower.set(i, new BigFraction(mins.get(i)));

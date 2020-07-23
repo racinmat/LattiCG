@@ -2,7 +2,7 @@ package randomreverser.math.component;
 
 public class SystemSolver {
 
-	public static SystemSolver.Result solve(Matrix base, Matrix extra, Phase phase) {
+	public static Result solve(Matrix base, Matrix extra, Phase phase) {
 		AugmentedMatrix am = new AugmentedMatrix(base.copy(), extra.copy());
 
 		for(int x = 0; x < am.getBase().getColumnCount(); x++) {
@@ -34,7 +34,7 @@ public class SystemSolver {
 		return new Result(am);
 	}
 
-	public static SystemSolver.BigResult solve(BigMatrix base, BigMatrix extra, Phase phase) {
+	public static BigResult solve(BigMatrix base, BigMatrix extra, Phase phase) {
 		BigAugmentedMatrix am = new BigAugmentedMatrix(base.copy(), extra.copy());
 
 		for(int x = 0; x < am.getBase().getColumnCount(); x++) {

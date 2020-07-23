@@ -1,12 +1,12 @@
 package randomreverser.reversal.instruction;
 
+import kaptainwutax.seedutils.lcg.LCG;
 import randomreverser.reversal.ProgramInstance;
 import randomreverser.reversal.asm.ParseException;
 import randomreverser.reversal.asm.StringParser;
 import randomreverser.reversal.asm.Token;
 import randomreverser.reversal.constraint.Constraint;
 import randomreverser.reversal.observation.Observation;
-import randomreverser.util.LCG;
 
 import java.util.function.Function;
 import java.util.stream.LongStream;

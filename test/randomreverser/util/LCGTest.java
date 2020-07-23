@@ -1,5 +1,6 @@
 package randomreverser.util;
 
+import kaptainwutax.seedutils.lcg.LCG;
 import org.junit.Test;
 import static org.junit.Assert.*;
 

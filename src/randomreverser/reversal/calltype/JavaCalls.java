@@ -1,9 +1,9 @@
 package randomreverser.reversal.calltype;
 
+import kaptainwutax.seedutils.lcg.LCG;
 import randomreverser.reversal.asm.ParseException;
 import randomreverser.reversal.asm.StringParser;
 import randomreverser.reversal.asm.Token;
-import randomreverser.util.LCG;
 import randomreverser.util.Pair;
 
 import java.math.BigInteger;

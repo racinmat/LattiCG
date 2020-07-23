@@ -1,10 +1,10 @@
 package randomreverser.reversal.calltype;
 
+import kaptainwutax.seedutils.lcg.LCG;
 import randomreverser.reversal.constraint.Constraint;
 import randomreverser.reversal.constraint.RangeConstraint;
 import randomreverser.reversal.observation.Observation;
 import randomreverser.reversal.observation.RangeObservation;
-import randomreverser.util.LCG;
 import randomreverser.util.Pair;
 
 import java.util.HashMap;

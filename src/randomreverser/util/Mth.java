@@ -1,7 +1,5 @@
 package randomreverser.util;
 
-import randomreverser.math.component.BigFraction;
-
 import java.math.BigInteger;
 
 public class Mth {

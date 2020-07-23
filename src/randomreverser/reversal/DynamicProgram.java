@@ -1,7 +1,7 @@
 package randomreverser.reversal;
 
+import kaptainwutax.seedutils.lcg.LCG;
 import randomreverser.reversal.calltype.CallType;
-import randomreverser.util.LCG;
 
 import java.util.ArrayList;
 import java.util.List;

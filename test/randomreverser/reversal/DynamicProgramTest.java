@@ -1,8 +1,8 @@
 package randomreverser.reversal;
 
+import kaptainwutax.seedutils.lcg.LCG;
 import org.junit.Test;
 import randomreverser.reversal.calltype.JavaCalls;
-import randomreverser.util.LCG;
 
 import java.util.Arrays;
 import java.util.stream.LongStream;

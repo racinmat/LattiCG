@@ -1,5 +1,6 @@
 package randomreverser.reversal.instruction;
 
+import kaptainwutax.seedutils.lcg.LCG;
 import randomreverser.math.component.BigFraction;
 import randomreverser.math.component.BigMatrix;
 import randomreverser.math.component.BigVector;
@@ -12,7 +13,6 @@ import randomreverser.reversal.asm.Token;
 import randomreverser.reversal.constraint.Constraint;
 import randomreverser.reversal.constraint.RangeConstraint;
 import randomreverser.reversal.observation.RangeObservation;
-import randomreverser.util.LCG;
 
 import java.util.ArrayList;
 import java.util.List;
