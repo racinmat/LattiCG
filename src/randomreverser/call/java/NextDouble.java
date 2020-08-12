@@ -1,8 +1,8 @@
 package randomreverser.call.java;
 
+import kaptainwutax.mathutils.util.Mth;
 import kaptainwutax.seedutils.lcg.LCG;
 import kaptainwutax.seedutils.lcg.rand.JRand;
-import kaptainwutax.seedutils.util.math.Mth;
 import randomreverser.call.LatticeCall;
 import randomreverser.call.SeedCall;
 import randomreverser.device.Lattice;
@@ -60,7 +60,7 @@ public class NextDouble extends LatticeCall<JRand> {
 		lattice.processCall(Next.inBitsRange(26, minLong >> 27, (maxLong >> 27) + 1));
 
 		if(minLong >>> 27 == maxLong >>> 27) { //Can we even say anything about the second half
-			lattice.processCall(Next.inBitsRange(27, minLong & Mth.mask(21), maxLong & Mth.mask(21)));
+			lattice.processCall(Next.inBitsRange(27, Mth.mask(minLong, 21), Mth.mask(maxLong, 21)));
 		} else {
 			lattice.processCall(Next.consume(LCG.JAVA,1));
 		}

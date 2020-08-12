@@ -121,12 +121,12 @@ public abstract class SeedCall<R extends Rand> extends LatticeCall<R> {
 
 				//First condition - is the seed real. This conveys more info than it seems since the normal mod vector not present.
 				lattice.minimums.add(0L);
-				lattice.maximums.add((1L << 48) - residue); // in the case the seed is > (1L << 48) - residue, the do while in java's nextInt will trigger.
+				lattice.maximums.add(lattice.modulus - residue); // in the case the seed is > (1L << 48) - residue, the do while in java's nextInt will trigger.
 				lattice.currentCallIndex += 1;
 				lattice.callIndices.add(lattice.currentCallIndex);
 				//Second condition - does the seed have a number within the bounds in its residue class.
-				lattice.minimums.add(min);
-				lattice.maximums.add(max);
+				lattice.minimums.add(this.min);
+				lattice.maximums.add(this.max);
 				lattice.callIndices.add(lattice.currentCallIndex); //We don't increment the call index here because this is really 2 conditions on the same seed
 
 				lattice.dimensions += 2; //We added 2 conditions

@@ -1,8 +1,8 @@
 package randomreverser.call.java;
 
+import kaptainwutax.mathutils.util.Mth;
 import kaptainwutax.seedutils.lcg.LCG;
 import kaptainwutax.seedutils.lcg.rand.JRand;
-import kaptainwutax.seedutils.util.math.Mth;
 import randomreverser.call.LatticeCall;
 import randomreverser.call.SeedCall;
 import randomreverser.device.Lattice;
@@ -67,7 +67,7 @@ public class NextInt extends LatticeCall<JRand> {
 			lattice.processCall(Next.inBitsRange(bits, this.min, this.max + 1));
 		} else {
 			long m = (1L << 17);
-			lattice.processCall(Next.inModRange(this.min * m, (this.max * m) | Mth.mask(17), this.bound * m));
+			lattice.processCall(Next.inModRange(this.min * m, (this.max * m) | Mth.getMask(17), this.bound * m));
 		}
 	}
 
