@@ -13,5 +13,5 @@ repositories {
 dependencies {
     testCompile "junit:junit:4.12"
     implementation('com.github.KaptainWutax:MathUtils:6c2d50eacad0241ff76119e6e703b70bac4b4bce') {transitive = false}
-    implementation('com.github.KaptainWutax:SeedUtils:e6f363e89fa0830ec874402498809cb1ea9d9e55') {transitive = false}
+    implementation('com.github.racinmat:SeedUtils:faac899d051b70457b18aff15780dd6b5911bd97') {transitive = false}
 }
